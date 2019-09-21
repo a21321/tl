@@ -62,7 +62,7 @@ div:afte{ content:"";//设置内容为空 　　　　　　 height:0;//高度�
 　　　　　　visibility:hidden;//将元素隐藏 　　　　　　 clear:both//清除浮动 }
 ```
 
-###大小不固定的图片统一水平垂直居中
+### 大小不固定的图片统一水平垂直居中
 
 ```html
 .img-box{ width: 200px; height: 200px; line-height: 200px; text-align: center;
@@ -70,7 +70,8 @@ font-size: 0; } .img-box img{ max-width: 90%; max-height: 90%; vertical-align:
 middle; }
 ```
 
-###单行文本溢出后省略号
+### 单行文本溢出后省略号
+
 `overflow: hidden; text-overflow:ellipsis; white-space: nowrap;`
 
 ###多行文本溢出后省略号
