@@ -61,3 +61,26 @@ div:afte{ content:"";//设置内容为空 　　　　　　 height:0;//高度�
 　　　　　　display:block;//将文本转为块级元素
 　　　　　　visibility:hidden;//将元素隐藏 　　　　　　 clear:both//清除浮动 }
 ```
+
+###大小不固定的图片统一水平垂直居中
+
+```html
+.img-box{ width: 200px; height: 200px; line-height: 200px; text-align: center;
+font-size: 0; } .img-box img{ max-width: 90%; max-height: 90%; vertical-align:
+middle; }
+```
+
+###单行文本溢出后省略号
+`overflow: hidden; text-overflow:ellipsis; white-space: nowrap;`
+
+###多行文本溢出后省略号
+
+- webkit-line-clamp 用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的 WebKit 属性。常见结合属性：
+- display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+- webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
+
+##### 适用范围：
+
+因使用了 WebKit 的 CSS 扩展属性，该方法适用于 WebKit 浏览器及移动端
+使用方式:
+`display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;`
